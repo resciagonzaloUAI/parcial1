@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">  
-  <script src="scriptForm.js"></script>
+  <script src="validator.js"></script>
   <title>PARCIAL 1 LPPA</title>
 </head>
 <body>
@@ -26,10 +26,14 @@
     <div class="contenedorFormulario">
 
         <form name="myForm" class="formulario" action="/action_page.php" onsubmit="return validateForm()" method="post">
-          <p>Nombre:</p> <input class="formspace" type="text" name="fname" onsubmit="return validateForm()" method="post">
-          <p>Apellido:</p> <input class="formspace" type="text" name="fapellido" onsubmit="return validateForm()" method="post">
-          <p>Correo:</p> <input class="formspace" type="email" name="fmail" onsubmit="return validateEmail()" method="post">
-          <p>Edad:</p> <input class="formspace" type="number" name="fte" onsubmit="return validateForm()" method="post">
+          <p>Nombre:</p> 
+                <input class="formspace" type="text" name="fname" onsubmit="return validateForm()" method="post">
+          <p>Apellido:</p> 
+                <input class="formspace" type="text" name="fapellido" onsubmit="return validateForm()" method="post">
+          <p>Correo:</p> 
+                <input class="formspace" type="email" name="fmail" onsubmit="return validateEmail()" method="post">
+          <p>Edad:</p> 
+                <input class="formspace" type="number" name="fte" onsubmit="return validateForm()" method="post">
           <p>Sexo:</p>
                 <input type="radio" id="hombre" name="sexo" value="hombre">
                 <label for="hombre">Hombre</label>
@@ -47,16 +51,17 @@
                 <input type="checkbox" id="teconlogia" name="interes" value="tecnologia">
                 <label for="tecnologia">Tecnologia</label> 
           <p>Pais:</p>
-          <select name="pais" id="pais" form="carform">
-            <option value="Argentina">Argentina</option>
-            <option value="Brasil">Brasil</option>
-            <option value="Chile">Chile</option>
-            <option value="Uruguay">Uruguay</option>
-        </select>
-        <p>Comentario:</p> <textarea name="message" rows="5" cols="20"></textarea>
+                <select name="pais" id="pais" form="carform">
+                    <option value="Argentina">Argentina</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Uruguay">Uruguay</option>
+                </select>
+        <p>Comentario:</p> 
+                <textarea name="message" rows="5" cols="20"></textarea>
         <p>Gracias por contactarse!</p>
-          <input class="botones" type="submit" value="Enviar" onclick="ValidateEmail(document.myform.fmail)">
-          <input class="botones" type="reset" value="Reset">
+        <input class="botones" type="submit" value="Enviar" onclick="ValidateEmail(document.myform.fmail)">
+        <input class="botones" type="reset" value="Reset">
         </form>
     </div>
 
