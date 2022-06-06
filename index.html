@@ -26,20 +26,43 @@
     <div class="contenedorFormulario">
 
         <form name="myForm" class="formulario" action="/action_page.php" onsubmit="return validateForm()" method="post">
-          Nombre: <input type="text" name="fname" onsubmit="return validateForm()" method="post">
-          Apellido: <input type="text" name="fapellido" onsubmit="return validateForm()" method="post">
-          Contraseña: <input type="password" name="fpasswd" onsubmit="return validateForm()" method="post">
-          Correo: <input type="email" name="fmail" onsubmit="return validateEmail()" method="post">
-          Telefono: <input type="tel" name="fte" onsubmit="return validateForm()" method="post">
-          Direccion: <input type="text" name="fdire" onsubmit="return validateForm()" method="post">
-        
+          <p>Nombre:</p> <input class="formspace" type="text" name="fname" onsubmit="return validateForm()" method="post">
+          <p>Apellido:</p> <input class="formspace" type="text" name="fapellido" onsubmit="return validateForm()" method="post">
+          <p>Correo:</p> <input class="formspace" type="email" name="fmail" onsubmit="return validateEmail()" method="post">
+          <p>Edad:</p> <input class="formspace" type="number" name="fte" onsubmit="return validateForm()" method="post">
+          <p>Sexo:</p>
+                <input type="radio" id="hombre" name="sexo" value="hombre">
+                <label for="hombre">Hombre</label>
+                <input type="radio" id="mujer" name="sexo" value="mujer">
+                <label for="mujer">Mujer</label>
+                <input type="radio" id="otro" name="sexo" value="otro">
+                <label for="otro">Otro</label> 
+          <p>Temas de Interes:</p> 
+                <input type="checkbox" id="musica" name="interes" value="musica">
+                <label for="musica">Música</label>
+                <input type="checkbox" id="deporte" name="interes" value="deporte">
+                <label for="deporte">Deporte</label>
+                <input type="checkbox" id="juegos" name="interes" value="juegos">
+                <label for="juegos">Juegos</label> 
+                <input type="checkbox" id="teconlogia" name="interes" value="tecnologia">
+                <label for="tecnologia">Tecnologia</label> 
+          <p>Pais:</p>
+          <select name="pais" id="pais" form="carform">
+            <option value="Argentina">Argentina</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Chile">Chile</option>
+            <option value="Uruguay">Uruguay</option>
+        </select>
+        <p>Comentario:</p> <textarea name="message" rows="5" cols="20"></textarea>
+        <p>Gracias por contactarse!</p>
           <input class="botones" type="submit" value="Enviar" onclick="ValidateEmail(document.myform.fmail)">
+          <input class="botones" type="reset" value="Reset">
         </form>
     </div>
 
     <footer>  
         <div class="final">
-            Diario La Verdad - 06 Junio 2022
+           <p class="textofinal"> Diario La Verdad - 06 Junio 2022</p>
         </div>
 </footer>
 </body>

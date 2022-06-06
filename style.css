@@ -2,6 +2,7 @@ body {
     width: 90%;
     height: 100%;
     margin-left:5%;
+    background-color:slategray;
 }
 
 .titulo {
@@ -22,7 +23,7 @@ body {
     width: 100%;
     height: 50px;
     margin-bottom:10%;
-    background-color: antiquewhite;
+    background-color:dimgrey;
 }
 
 .navbar {
@@ -33,10 +34,52 @@ body {
 
 li, .navbarElement { 
     margin-top:15px;
+    color:black;
+    text-decoration:none;
     flex-direction: row;
     flex-wrap: nowrap;
 }
 
+a {
+    color:bkack;
+    text-decoration: none;
+}
+
 .navbarElement:hover {
     background-color:burlywood;
+}
+
+.contenedorFormulario {
+    width: 33%;
+    margin-left:33%;
+    margin-bottom: 20px;
+    border-style: double;
+    display: flex;
+}
+
+.formulario {
+    margin: 10px 10px 10px 10px;
+    width: 100%;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.formspace {
+    margin-top:10px;
+}
+
+
+.final {
+    bottom:0;
+    width: 80%;
+    margin-top:20px;
+    margin-left:10%;
+    height: 60px;
+    background-color: beige;
+    text-align: center;
+}
+
+.textofinal {
+    margin-top:10px;
 }
