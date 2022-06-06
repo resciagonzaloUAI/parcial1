@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">  
+  <script src="scriptForm.js"></script>
+  <title>PARCIAL 1 LPPA</title>
+</head>
+<body>
+    <div class="titulo">
+        <h1 class="titNoticia">Diario La Verdad</h1>
+        <h2 class="susbitulo">Noticias objetivas para el pueblo Argentino</h2>
+    </div>
+    <div class="menu">
+        <ul class="navbar">
+            <li class="navbarElement"><a href="index.html">Principal</a></li>
+            <li class="navbarElement"><a href="index.html">Noticias</a></li>
+            <li class="navbarElement"><a href="form.html" target="_blank">Suscribirse</a></li>
+            <li class="navbarElement"><a href="https://weather.com/?Goto=Redirected" target="_blank">Clima</a></li>
+        </ul>
+    </div>
+
+    <div class="contenedorFormulario">
+
+        <form name="myForm" class="formulario" action="/action_page.php" onsubmit="return validateForm()" method="post">
+          Nombre: <input type="text" name="fname" onsubmit="return validateForm()" method="post">
+          Apellido: <input type="text" name="fapellido" onsubmit="return validateForm()" method="post">
+          Contraseña: <input type="password" name="fpasswd" onsubmit="return validateForm()" method="post">
+          Correo: <input type="email" name="fmail" onsubmit="return validateEmail()" method="post">
+          Telefono: <input type="tel" name="fte" onsubmit="return validateForm()" method="post">
+          Direccion: <input type="text" name="fdire" onsubmit="return validateForm()" method="post">
+        
+          <input class="botones" type="submit" value="Enviar" onclick="ValidateEmail(document.myform.fmail)">
+        </form>
+    </div>
+
+    <footer>  
+        <div class="final">
+            Diario La Verdad - 06 Junio 2022
+        </div>
+</footer>
+</body>
+</html>
