@@ -1,0 +1,42 @@
+body {
+    width: 90%;
+    height: 100%;
+    margin-left:5%;
+}
+
+.titulo {
+    text-align: center;
+    border-color:black;
+}
+
+.titdiario {
+    text-decoration:underline;
+}
+
+.susbitulo {
+    font-style:italic;
+}
+
+.menu {
+    margin-top:5%;
+    width: 100%;
+    height: 50px;
+    margin-bottom:10%;
+    background-color: antiquewhite;
+}
+
+.navbar {
+    display:flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+li, .navbarElement { 
+    margin-top:15px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.navbarElement:hover {
+    background-color:burlywood;
+}
