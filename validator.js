@@ -104,3 +104,37 @@ function apellido() {
             return false;
         }
     }
+
+    function sexo() {
+        var getSelectedValue = document.querySelector( 'input[name="fsexo"]:checked');   
+    if(getSelectedValue != null) {   
+    }   else {  
+         alert ("Debe aclarar el sexo");  
+        }
+    }   
+
+    function interes() {
+        var getSelectedValue = document.querySelector( 'input[name="finteres"]:checked');   
+        if(getSelectedValue != null) {   
+        }   else {  
+             alert ("Debe aclarar su/sus temas de interés");  
+            }
+    }
+
+    function pais() {
+        select = document.getElementById('select'); // or in jQuery use: select = this;
+        if (select.value) {
+        
+        }
+        else {alert ("Debe seleccionar un país")}
+    }
+
+
+function validateForm(){
+	if(!nombre() || !apellido() || !correo() || !edad() || !sexo() || !interes() || !pais() ){
+		submitError.style.display = 'block';
+		alert("Vuelva a intentar por favor.")
+	return false;
+
+	}
+}
