@@ -54,7 +54,7 @@ a {
     margin-left:33%;
     margin-bottom: 20px;
     border-style: double;
-    display: flex;
+    display: block;
 }
 
 .formulario {
@@ -100,7 +100,7 @@ a {
   
   /* Modal Content/Box */
   .modal-content {
-    background-color: #fefefe;
+    background-color:aquamarine;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
@@ -118,6 +118,6 @@ a {
   .close:hover,
   .close:focus {
     color: black;
-    text-decoration: none;
+    text-decoration:dotted;
     cursor: pointer;
   }
