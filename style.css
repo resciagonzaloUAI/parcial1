@@ -54,7 +54,8 @@ a {
     margin-left:33%;
     margin-bottom: 20px;
     border-style: double;
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .formulario {
@@ -66,7 +67,10 @@ a {
 }
 
 .formspace {
-    margin-top:10px;
+    margin-top:5px;
+    width: 80%;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 
