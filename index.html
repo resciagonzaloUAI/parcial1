@@ -25,33 +25,33 @@
 
     <div class="contenedorFormulario">
 
-        <form name="myForm" class="formulario" action="/action_page.php" onsubmit="return validateForm()" method="post">
+        <form name="myForm" class="formulario" action="/action_page.php" onsubmit="return validateForm2()" method="post">
           <p>Nombre:</p> 
-                <input class="formspace" type="text" name="fname" onsubmit="return nombre()" method="post">
+                <input class="formspace" type="text" name="fname" onsubmit="return validateForm2()" method="post">
           <p>Apellido:</p> 
-                <input class="formspace" type="text" name="fapellido" onsubmit="return apellido()" method="post">
+                <input class="formspace" type="text" name="fapellido" onsubmit="return validateForm2()" method="post">
           <p>Correo:</p> 
-                <input class="formspace" type="email" name="fmail" onsubmit="return correo()" method="post">
+                <input class="formspace" type="email" name="fmail" onsubmit="return validateForm2()" method="post">
           <p>Edad:</p> 
-                <input class="formspace" type="number" name="fedad" onsubmit="return edad()" method="post">
+                <input class="formspace" type="number" name="fedad" onsubmit="return validateForm2()" method="post">
           <p>Sexo:</p>
-                <input type="radio" id="hombre" name="fsexo" value="hombre" onsubmit="return sexo()">
+                <input type="radio" id="hombre" name="fsexo" value="hombre">
                 <label for="hombre">Hombre</label>
-                <input type="radio" id="mujer" name="fsexo" value="mujer" onsubmit="return sexo()">
+                <input type="radio" id="mujer" name="fsexo" value="mujer">
                 <label for="mujer">Mujer</label>
-                <input type="radio" id="otro" name="fsexo" value="otro" onsubmit="return sexo()">
+                <input type="radio" id="otro" name="fsexo" value="otro">
                 <label for="otro">Otro</label> 
           <p>Temas de Interes:</p> 
-                <input type="checkbox" id="musica" name="finteres" value="musica" onsubmit="return interes()">
+                <input type="checkbox" id="musica" name="finteres" value="musica">
                 <label for="musica">Música</label>
-                <input type="checkbox" id="deporte" name="finteres" value="deporte" onsubmit="return interes()">
+                <input type="checkbox" id="deporte" name="finteres" value="deporte">
                 <label for="deporte">Deporte</label>
-                <input type="checkbox" id="juegos" name="finteres" value="juegos" onsubmit="return interes()">
+                <input type="checkbox" id="juegos" name="finteres" value="juegos">
                 <label for="juegos">Juegos</label> 
-                <input type="checkbox" id="teconlogia" name="finteres" value="tecnologia" onsubmit="return interes()">
+                <input type="checkbox" id="teconlogia" name="finteres" value="tecnologia">
                 <label for="tecnologia">Tecnologia</label> 
           <p>Pais:</p>
-                <select name="pais" id="fpais" form="carform" onsubmit="return pais()">
+                <select name="pais" id="fpais" form="carform">
                     <option value="Argentina">Argentina</option>
                     <option value="Brasil">Brasil</option>
                     <option value="Chile">Chile</option>
@@ -60,7 +60,7 @@
         <p>Comentario:</p> 
                 <textarea name="message" rows="5" cols="20"></textarea>
         <p>Gracias por contactarse!</p>
-        <input class="botones" type="submit" value="Enviar" onclick="validateForm()">
+        <input class="botones" type="submit" value="Enviar" onclick="validateForm2(document.myform.fmail)">
         <input class="botones" type="reset" value="Reset">
         </form>
     </div>
